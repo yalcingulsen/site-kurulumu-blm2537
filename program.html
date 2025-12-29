@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UniPlan | Program Oluştur</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Ana sayfa">
+        <span class="logo-text">UniPlan</span>
+      </a>
+
+      <nav class="nav" aria-label="Ana Menü">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          Menü
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+          <li><a class="nav-link active" href="program.html">Program Oluştur</a></li>
+
+<li>
+  <a class="nav-link" href="gallery.html">Galeri</a>
+</li>
+
+
+
+        </ul>
+      </nav>
+
+      <div class="auth">
+        <a class="btn btn-ghost" href="#">Giriş Yap</a>
+        <a class="btn btn-primary" href="#">Üye Ol</a>
+      </div>
+    </div>
+  </header>
+
+<main class="container">
+  <section class="card" style="margin-top:22px;">
+    <div class="builder-header">
+      <div>
+        <h1 style="margin:0;">Program Oluşturucu</h1>
+        <p class="muted" style="margin:6px 0 0;">Dersi sürükle-bırak ile ya da “Ekle” ile tabloya yerleştir. Sonra Kaydet.</p>
+      </div>
+
+     <div class="builder-actions">
+  <button class="btn btn-dark" id="printScheduleBtn" type="button">Yazdır / PDF</button>
+  <button class="btn btn-ghost" id="clearScheduleBtn" type="button">Programı Temizle</button>
+  <button class="btn btn-primary" id="saveScheduleBtn" type="button">Programı Kaydet</button>
+</div>
+
+    </div>
+
+    <div class="builder-grid">
+<div class="builder-left">
+  <div class="panel-title">
+    <h3>Ders Ekle</h3>
+
+
+  </div>
+
+  <div style="display:grid; gap:10px;">
+    <input class="input" id="manualCode" type="text" placeholder="Ders Kodu (örn. CS101)" />
+    <input class="input" id="manualName" type="text" placeholder="Ders Adı (örn. Introduction to Programming)" />
+    <button class="btn btn-primary" id="manualAddBtn" type="button">
+      Dersi Tabloya Ekle
+    </button>
+    <p class="muted" id="manualStatus"></p>
+  </div>
+<hr style="border:0;border-top:1px solid rgba(255,255,255,.12); margin:14px 0;">
+
+<h3 style="margin:0 0 8px;">Oluşturulan Dersler</h3>
+<p class="muted" style="margin:0 0 10px;">
+  Aşağıdaki ders kartını sürükleyip tabloya bırak.
+</p>
+
+<div class="course-list" id="manualCourseList"></div>
+</div>
+
+
+      <div class="builder-right">
+        <div class="panel-title">
+          <h3>Haftalık Program</h3>
+          <div class="muted">Pzt–Cum | 08:00–18:00</div>
+        </div>
+
+        <div class="schedule-wrap">
+          <table class="schedule" id="scheduleTable">
+            <thead>
+              <tr>
+                <th>Saat</th>
+                <th>Pazartesi</th>
+                <th>Salı</th>
+                <th>Çarşamba</th>
+                <th>Perşembe</th>
+                <th>Cuma</th>
+              </tr>
+            </thead>
+            <tbody id="scheduleBody">
+            </tbody>
+          </table>
+        </div>
+
+        <p class="muted" id="saveStatus" style="margin:10px 0 0;"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>UniPlan</strong>
+        <p class="muted">E-posta: info@uniplan.demo</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://x.com/" target="_blank" rel="noreferrer">X</a>
+      </div>
+
+      <div class="muted">© <span id="year"></span> UniPlan.</div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

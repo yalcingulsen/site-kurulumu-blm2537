@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UniPlan | Galeri</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Ana sayfa">
+        <span class="logo-text">UniPlan</span>
+      </a>
+
+      <nav class="nav" aria-label="Ana Menü">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          Menü
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+          <li><a class="nav-link" href="program.html">Program Oluştur</a></li>
+
+<li>
+  <a class="nav-link" href="gallery.html">Galeri</a>
+</li>
+
+
+
+        </ul>
+      </nav>
+
+      <div class="auth">
+        <a class="btn btn-ghost" href="#">Giriş Yap</a>
+        <a class="btn btn-primary" href="#">Üye Ol</a>
+      </div>
+    </div>
+  </header>
+
+<main class="container">
+  <section class="card" style="margin-top:22px;">
+    <h1 style="margin-top:0;">Resim Galerisi</h1>
+    <p class="muted">Küçük resme tıkla → büyük hali açılır (sayfa değişmez).</p>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <a class="thumb link-thumb" href="program.html" title="Program sayfasına git">
+        <img src="img/g1.jpg" alt="Galeri 1" data-full="img/g1.jpg" />
+        <span class="thumb-badge">Link</span>
+      </a>
+
+      <a class="thumb link-thumb" href="contact.html" title="İletişim sayfasına git">
+        <img src="img/g2.jpg" alt="Galeri 2" data-full="img/g2.jpg" />
+        <span class="thumb-badge">Link</span>
+      </a>
+
+      <div class="thumb">
+        <img src="img/g3.jpg" alt="Galeri 3" data-full="img/g3.jpg" />
+      </div>
+      <div class="thumb">
+        <img src="img/g4.jpg" alt="Galeri 4" data-full="img/g4.jpg" />
+      </div>
+      <div class="thumb">
+        <img src="img/g5.jpg" alt="Galeri 5" data-full="img/g5.jpg" />
+      </div>
+      <div class="thumb">
+        <img src="img/g6.jpg" alt="Galeri 6" data-full="img/g6.jpg" />
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="imgModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-label="Büyük görsel">
+      <button class="modal-close" id="modalClose" aria-label="Kapat">✕</button>
+      <img id="modalImg" src="" alt="Büyük görsel" />
+      <p class="muted" id="modalCaption"></p>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>UniPlan</strong>
+        <p class="muted">E-posta: info@uniplan.demo</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://x.com/" target="_blank" rel="noreferrer">X</a>
+      </div>
+
+      <div class="muted">© <span id="year"></span> UniPlan.</div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

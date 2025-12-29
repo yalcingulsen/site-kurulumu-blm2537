@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UniPlan | Üniversite Program Oluşturucu</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Ana sayfa">
+        <span class="logo-text">UniPlan</span>
+      </a>
+
+      <nav class="nav" aria-label="Ana Menü">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          Menü
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="nav-link active" href="index.html">Ana Sayfa</a></li>
+          <li><a class="nav-link" href="program.html">Program Oluştur</a></li>
+
+    <li>
+  <a class="nav-link" href="gallery.html">Galeri</a>
+</li>
+
+
+
+        </ul>
+      </nav>
+
+      <div class="auth">
+        <a class="btn btn-ghost" href="#" aria-label="Giriş Yap (demo)">Giriş Yap</a>
+        <a class="btn btn-primary" href="#" aria-label="Üye Ol (demo)">Üye Ol</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Haftalık ders programını dakikalar içinde oluştur.</h1>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="program.html">Programını Oluştur</a>
+          <a class="btn btn-ghost" href="gallery.html">Örnek Galeri</a>
+        </div>
+
+        <div class="search-row">
+          <label class="sr-only" for="searchInput">Ders ara</label>
+          <input id="searchInput" class="input" type="search" placeholder="Ders ara (örn. CS101, ECON201)..." />
+          <button class="btn btn-dark" id="searchBtn">Ara</button>
+        </div>
+        <p class="muted" id="searchResult"></p>
+      </div>
+
+      <div class="hero-card">
+        <img src="img/campus.jpg" alt="Kampüs görseli" class="hero-img" />
+     <div class="hero-card-links">
+  <a href="program.html" class="pill">Program</a>
+  <a href="gallery.html" class="pill">Galeri</a>
+</div>
+
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Ne işe yarar?</h2>
+      <div class="grid3">
+        <div class="card">
+          <h3>Kolay ekle</h3>
+          <p>Dersleri tabloya tek tıkla ekle veya sürükle-bırak ile yerleştir.</p>
+        </div>
+        <div class="card">
+          <h3>Kaydet</h3>
+          <p>Programını tarayıcıda kaydet (localStorage) ve kaldığın yerden devam et.</p>
+        </div>
+        <div class="card">
+          <h3>Düzenli görünüm</h3>
+          <p>Pazartesi–Cuma ve 08:00–18:00 aralığında net bir haftalık plan.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>UniPlan</strong>
+        <p class="muted">E-posta: info@uniplan.demo</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://x.com/" target="_blank" rel="noreferrer">X</a>
+      </div>
+
+      <div class="muted">© <span id="year"></span> UniPlan.</div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
