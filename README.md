@@ -17,5 +17,8 @@ UniPlan, öğrencilerin haftalık ders programlarını sürükle-bırak yöntemi
 
 ## Canlı Site (GitHub Pages)
 https://yalcingulsen.github.io/site-kurulumu-blm2537/
+
+## Detaylı Anlatım Vidyosu (Youtube)
+https://youtu.be/Ie57k_Gc6GA
 ## Kurulum
 Projeyi indirdikten sonra index.html dosyasını tarayıcıda açarak çalıştırabilirsiniz.
