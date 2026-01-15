@@ -208,7 +208,6 @@ img{max-width:100%;display:block}
   .nav-menu.show{display:flex}
   .dropdown-menu{position:static; display:block; width:100%; background:transparent; border:none; padding:0; box-shadow:none}
 }
-/* ===== Gallery ===== */
 .gallery-grid{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
@@ -247,7 +246,6 @@ img{max-width:100%;display:block}
   .thumb img{height:150px}
 }
 
-/* ===== Modal ===== */
 .modal{display:none}
 .modal.show{display:block}
 .modal-backdrop{
@@ -286,7 +284,7 @@ img{max-width:100%;display:block}
   cursor:pointer;
 }
 .modal-close:hover{background: rgba(255,255,255,.1)}
-/* ===== Program Builder ===== */
+
 .builder-header{
   display:flex;
   align-items:flex-start;
@@ -407,7 +405,7 @@ img{max-width:100%;display:block}
   cursor:pointer;
 }
 .lesson-pill .remove:hover{background: rgba(0,0,0,.25)}
-/* ===== Print (PDF) ===== */
+
 @media print{
   body{background:#fff;color:#000}
   .site-header, .site-footer, .builder-left, .builder-actions, .muted, .nav { display:none !important; }
@@ -416,21 +414,21 @@ img{max-width:100%;display:block}
   .schedule{min-width: 0; color:#000; background:#fff}
   .schedule thead th{position:static}
   .lesson-pill{box-shadow:none; border:1px solid #999 !important; color:#000}
-/* Program sayfasında sağ panel taşma fix */
+
 .builder-right{
-  min-width: 0;          /* flex/grid taşmasını engeller */
-  overflow: hidden;      /* sağa taşan yazıyı/kutuğu kırpar */
+  min-width: 0;         
+  overflow: hidden; 
 }
 
 .builder-right .panel-title{
-  flex-wrap: wrap;       /* satır taşınca alta geçsin */
+  flex-wrap: wrap;       
 }
 
 .builder-right .panel-title .muted{
-  margin-left: auto;     /* sağa yasla */
+  margin-left: auto;     
   text-align: right;
   max-width: 100%;
-  white-space: nowrap;   /* tek satır kalsın */
+  white-space: nowrap;  
 }
 
 }
